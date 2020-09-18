@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        
+        android:id="@+id/Explore_item"
+        android:icon="@drawable/ic_montain"
+        android:title="Explore" />
+    <item
+        android:id="@+id/Favorite_item"
+        android:icon="@drawable/ic_heart_favorit_filled"
+        android:title="Favorite" />
+
+
+ <group
+     android:checkableBehavior="single">
+
+     <item
+         android:title="Others">
+
+
+         <menu>
+
+             <item
+                 android:id="@+id/Rate_item"
+                 android:icon="@drawable/ic_rate"
+                 android:title="Rate" />
+
+             <item
+                 android:id="@+id/More_item"
+                 android:icon="@drawable/ic_more"
+                 android:title="More" />
+
+
+             <item
+                 android:id="@+id/share_item"
+                 android:icon="@drawable/ic_share"
+                 android:title="Share" />
+
+             <item
+                 android:id="@+id/Settings_item"
+                 android:icon="@drawable/ic_settings"
+                 android:title="Settings" />
+
+
+         </menu>
+
+     </item>
+
+ </group>
+
+
+
+</menu>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitiess.Test_Activity"
+    android:background="@drawable/wallpaper_test2">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/botttoms_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+       app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_hideable ="true"
+        app:behavior_peekHeight ="55dp"
+
+        android:background="@color/black_transparent">
+
+      
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+              <LinearLayout
+                  android:padding="5dp"
+                  android:layout_weight="10"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="8"
+                      android:id="@+id/textView_category_details_wallpaper"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="10dp"
+                      android:text="Toons"
+                      android:textColor="@color/colorWhite"
+                      android:textSize="17sp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                      app:layout_constraintHorizontal_bias="0.0"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintVertical_bias="0.526" />
+
+                  <ImageView
+
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.5"
+                      android:id="@+id/share_details"
+                      android:layout_width="24dp"
+                      android:layout_height="24dp"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginEnd="25dp"
+                      android:layout_marginBottom="8dp"
+                      android:padding="3dp"
+                      android:src="@drawable/ic_forward"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintVertical_bias="0.0" />
+
+                  <ImageView
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.5"
+                      android:id="@+id/downloadd"
+                      android:layout_width="25dp"
+                      android:layout_height="25dp"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginEnd="25dp"
+                      android:layout_marginBottom="8dp"
+                      android:src="@drawable/ic_download_arrow_down_white"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                      app:layout_constraintTop_toTopOf="parent" />
+
+
+                  <ImageView
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.5"
+                      android:id="@+id/sett_wallpaper"
+                      android:layout_width="25dp"
+                      android:layout_height="25dp"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginEnd="25dp"
+                      android:layout_marginBottom="8dp"
+                      android:src="@drawable/ic_paint"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toStartOf="@+id/myCompatCheckBox_id"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintVertical_bias="0.56" />
+
+
+
+                  <androidx.appcompat.widget.AppCompatCheckBox
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.5"
+                      android:id="@+id/myCompatCheckBox_id"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginRight="8dp"
+                      android:layout_marginBottom="8dp"
+                      android:button="@drawable/custom_checkbox_fav"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintVertical_bias="0.333" />
+
+              </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_marginTop="27dp"
+                    android:layout_marginStart="15dp"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorWhite"
+                            android:text="Views"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+
+                            android:id="@+id/views_num"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
+                            android:text="13.0k"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorWhite"
+                            android:text="Downloads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/downloads_no"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
+                            android:text="2.1k"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorWhite"
+                            android:text="Resolution"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/size_no"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
+                            android:text="1080 x 1920"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            
+            </LinearLayout>
+
+        
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
